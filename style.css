@@ -1,0 +1,34 @@
+:root{--bg:#F3F6FA;--ink:#101828;--muted:#475467;--accent:#2540D9;--mint:#1DB98A;--line:#D8DFEA}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 1.0625rem/1.6 "DM Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,.logo{font-family:"Bricolage Grotesque","DM Sans",sans-serif;letter-spacing:-.02em;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem clamp(1rem,5vw,4rem)}
+.logo{font-weight:700;text-decoration:none;font-size:1.25rem}
+.top nav{display:flex;gap:1.5rem}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--accent)}
+section{padding:4rem clamp(1rem,5vw,4rem);max-width:1100px;margin:auto}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;min-height:70vh}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;margin-bottom:1.25rem}
+.hero p{color:var(--muted);max-width:46ch;margin-bottom:1.75rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:.6rem;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;margin:0 .5rem .5rem 0;border:2px solid var(--accent)}
+.btn:hover{background:#1B30A8;border-color:#1B30A8}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.code{background:#0E1730;color:#DCE6FF;border-radius:1rem;padding:1.5rem;font:400 .95rem/1.7 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;border-left:6px solid var(--mint)}
+.code .k{color:#7FA6FF}
+.code .s{color:#6EE7B7}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:1.25rem}
+.sobre p{max-width:62ch;color:var(--muted)}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
+h3{font-size:1rem;margin-bottom:.75rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
+.chips li{padding:.35rem .8rem;border:1.5px solid var(--line);border-radius:99px;background:#fff;font-size:.95rem}
+.contato ul{list-style:none;padding:0;display:grid;gap:.5rem}
+.contato a{color:var(--accent);font-weight:500}
+footer{text-align:center;color:var(--muted);padding:2rem;font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:0}.top nav{gap:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
